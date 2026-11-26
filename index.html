@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Nicolas</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Menu de Navegação */
+        nav {
+            background-color: #162b52;
+            padding: 0.8rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #64b5f6;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        /* Cartões de Postagem */
+        .post {
+            background: #fff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .post h2 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+
+        .post .meta {
+            font-size: 0.85rem;
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        /* Estilo da Imagem nos Posts */
+        .post-img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 0.5rem 0 1rem 0;
+            display: block;
+        }
+
+        /* Barra Lateral (Sobre Mim) */
+        aside {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        aside h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f4f7f6;
+            padding-bottom: 0.5rem;
+        }
+
+        .info-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .info-list li {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #162b52;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        /* Responsividade para Celular */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Diário do Nicolas</h1>
+        <p>Tecnologia, rotina, relacionamento e a vida com os dogs 🐾</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#posts">Postagens</a>
+        <a href="#sobre">Sobre Mim</a>
+    </nav>
+
+    <div class="container" id="inicio">
+        <!-- Coluna Principal: Posts -->
+        <main id="posts">
+            <article class="post">
+                <h2>Amizade ao infinito e além 🚀🤠</h2>
+                <div class="meta">Publicado por Nicolas • Categoria: Filmes & Nostalgia</div>
+                <!-- Lembre-se de salvar a imagem como "toy-story.jpg" na mesma pasta do HTML -->
+                <img src="toy-story.jpg" alt="Woody e Buzz Lightyear no quarto do Andy" class="post-img">
+                <p>Relembrando um dos maiores clássicos da animação! Toy Story marca gerações e mostra o verdadeiro significado de parceria.</p>
+            </article>
+
+            <article class="post">
+                <h2>Minha rotina na área de Telecomunicações</h2>
+                <div class="meta">Publicado por Nicolas • Categoria: Trabalho</div>
+                <p>Trabalhar com telecomunicações aos 17 anos tem sido uma experiência incrível. Todo dia aprendo algo novo sobre redes, conexões e como manter todo mundo online. É uma área dinâmica e cheia de desafios!</p>
+            </article>
+
+            <article class="post">
+                <h2>2 anos e 6 meses de muita parceria ❤️</h2>
+                <div class="meta">Publicado por Nicolas • Categoria: Vida Pessoal</div>
+                <p>Completar dois anos e meio de namoro é um marco muito especial. Construir uma história, crescer junto e ter alguém para compartilhar os dias bons e os desafios da rotina faz toda a diferença.</p>
+            </article>
+
+            <article class="post">
+                <h2>Por que cachorros são os melhores companheiros? 🐶</h2>
+                <div class="meta">Publicado por Nicolas • Categoria: Pets</div>
+                <p>Não existe recepção melhor depois de um dia longo de trabalho do que a alegria de um cachorro. Seja para brincar ou só ficar de boa, eles sempre deixam o dia mais leve.</p>
+            </article>
+        </main>
+
+        <!-- Barra Lateral: Perfil -->
+        <aside id="sobre">
+            <h3>Sobre o Nicolas</h3>
+            <p>E aí! Bem-vindo ao meu espaço na web. Criei este blog para compartilhar um pouco do meu dia a dia e das coisas que eu curto.</p>
+            
+            <ul class="info-list">
+                <li>🎂 <strong>Idade:</strong> 17 anos</li>
+                <li>📡 <strong>Trabalho:</strong> Telecomunicações</li>
+                <li>❤️ <strong>Status:</strong> Namorando há 2 anos e 6 meses</li>
+                <li>🐕 <strong>Paixão:</strong> Cachorros</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Blog do Nicolas. Feito no VS Code.</p>
+    </footer>
+
+</body>
+</html>
